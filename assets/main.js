@@ -84,7 +84,9 @@ function renderQuestion(){
 } 
 
 function resetQuizz(){
-
+    $('.reset').on('click', '.redo', function(event) {
+        location.reload();
+      });
 }
 
 function renderScore(){
