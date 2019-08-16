@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>repl.it</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href='./assets/main.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div class='wrapper'>
+      <p class='title-text'>World History Quiz</p>
+      <div class='total-score'>
+        <div>
+            <p>Score <span class="count-score">0</span>/10</p>
+            <p>Question Number <span class="count-quizz">0</span>/10</p>
+        </div>
+    </div>
+      <div class='stage-start active'> <!--active-->
+        <div class='start-btn'>
+            <button class='btn-start'>Start Quiz</button>
+        </div>
+      
+      </div>
+      <div class='stage-form '>
+        <div class='form-text'>
+            <form id='list-options'>
+                <div class='form-question'>
+                </div>
+                <div class='option-div'>
+                    <input class='answerOptions' type='radio' name='options'  required="required">
+                    <label for="one" class='answerOptions option-0' ></label> 
+                </div>
+                
+                <div class='option-div'>
+                    <input class='answerOptions' type='radio' name='options'  required="required">
+                    <label for="two" class='answerOptions option-1' ></label>   
+                </div> 
+                
+                <div class='option-div'>
+                    <input class='answerOptions' type='radio' name='options'  required="required">
+                    <label for="three" class='answerOptions option-2' ></label>   
+                </div> 
+                
+                <div class='option-div'>
+                    <input class='answerOptions' type='radio' name='options'  required="required">
+                    <label for="four" class='answerOptions option-3' ></label>   
+                </div> 
+                
+                <div class='btn-submit-div'>
+                    <input type='submit' class='btn-submit'>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class='stage-results active'><!--active-->
+      <form id="next-form">
+        <div class="results-style">
+            <div class='right-answer same-text'>
+              <p>You Got It Right!</p>
+              <input type="submit" class="btn-next" value="Next">
+            </div>
+            <div class='wrong-answer same-text'>
+              <p>The Correct Answer Is <span class='correct-answer'></span></p>
+              <input type="submit" class="btn-next" value="Next">
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="final-score stage-final">
+      <div class='three-right same-text'>
+        <p>Might wanna use Google next time <span class="score">You Got </span> Correct</p>
+      </div>
+      <div class='half-right same-text'>
+        <p>Almost got it keep up the good work <span class="score">You Got </span> Correct</p>
+      </div>
+      <div class='all-right same-text'>
+        <p>Perfect Score!!! You really know your history.<span class="score">You Got </span> Correct</p>
+      </div>
+      <div class="reset">
+        <button class='redo'>Retry Quiz</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src='./assets/main.js'></script> 
+</body>
+</html>

@@ -1,0 +1,170 @@
+*, html{
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+.right-answer{display: none;}
+
+.wrong-answer{display: none;}
+
+.all-right{display: none;} 
+
+.half-right{display: none;}
+
+.three-right{display: none;}
+
+.stage-start, .stage-form, .stage-results, .stage-final{
+  display: none;
+}
+
+.active{display: block;}
+
+.title-text{
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.total-score{
+  text-align: center;
+  font-size: 2em;
+}
+
+.total-score p{
+  margin: 15px;
+}
+
+body{
+  background-image: url(https://images.pexels.com/photos/5439/earth-space.jpg?cs=srgb&dl=atmosphere-cosmos-earth-5439.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.form-question{
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.form-question p{
+  font-size: 1.5em;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+}
+
+
+
+.form-text{
+  display: flex;
+  justify-content: center;
+}
+
+.first-one{
+  margin-top: 15px;
+}
+
+.answerOtions{
+  font-size: 2em;
+}
+
+.option-div label{
+  font-size: 1.5em;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.submitButton{
+  border: none;
+  padding: 15px;
+}
+.div-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.start-btn{
+  display: flex; 
+  justify-content: center;
+}
+ 
+.start-btn button{
+  margin-top: 5%;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  padding: 40px;
+  font-size: 3em; 
+  border-radius: 20px;
+}
+
+.start-btn button:hover{
+  background-color: grey;
+}
+
+.btn-submit-div{
+  display: flex; 
+  justify-content: center;
+}
+
+.btn-submit{
+  margin-top: 5%;
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 40px;
+  font-size: 2em; 
+  border-radius: 20px;
+}
+
+.btn-submit:hover{
+  background-color: grey;
+}
+
+.option-div{
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 15px;
+  font-size: 24px; 
+}
+
+.results-style{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.same-text{
+  text-align: center;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.btn-next{
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: .9em;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.final-score{
+  font-size: 15px;
+  text-align: center;
+
+}
+.redo{
+  border: none;
+  font-size: 3em;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 25px;
+  background-color: whitesmoke;
+}
+.redo:hover{
+  background-color: #b0b0b0;
+}
+/* Smaller Screens  */

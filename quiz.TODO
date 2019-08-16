@@ -1,0 +1,21 @@
+✔ handle start button @done(19-08-01 18:27)
+✔ remove button @done(19-08-01 18:27)
+✔ render the fourm @done(19-08-01 18:27)
+✔ style the option tags to look good @done(19-08-02 15:14)
+✔ loop throught the array of questions so it adds to the form in html @done(19-08-02 15:14)
+✔ render forum with question @done(19-08-02 17:59)
+✔ render with options @done(19-08-02 19:24)
+✔ render sumbit button @done(19-08-06 16:30)
+✔ handle sumbut button @done(19-08-06 16:31)
+✔ build logic for if right or wrong @done(19-08-07 21:59)
+✔ build up to show them right or wrong answer @done(19-08-10 00:34)
+✔ they got it right or wrong @done(19-08-11 01:44)
+✔ update score @done(19-08-11 01:44)
+✔ quizz number @done(19-08-15 17:39)
+✔ render next question @done(19-08-15 17:39)
+✔ store reffercnce to current question @done(19-08-15 17:39)
+☐ check final question sumbit button
+☐ display finally results
+    ☐ Also here is where you'll need to check if questionNumber exceeds the length of your questions array. 
+    :If it does, you'll need to show the user their final results from the quiz
+☐ handle restart quizz button
