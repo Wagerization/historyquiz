@@ -17,6 +17,12 @@
 .stage-start, .stage-form, .stage-results, .stage-final{
   display: none;
 }
+.block{display: none;}
+
+.q-image{
+  height: 150px;
+  width: 150px;
+}
 
 .active{display: block;}
 
@@ -35,10 +41,11 @@
   margin: 15px;
 }
 
-body{
+.wrapper{
   background-image: url(https://images.pexels.com/photos/5439/earth-space.jpg?cs=srgb&dl=atmosphere-cosmos-earth-5439.jpg&fm=jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  height: 100vh;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -59,6 +66,7 @@ body{
 .form-text{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .first-one{

@@ -1,11 +1,27 @@
 STORE = [
-    {Question: 'Suez canal opened in the year', 
-    options: ['1863AD', '1869AD', '1875AD', '1983AD',], 
-    answer: '1869AD'},
+    {Question: 'Name the person who built Fort Necessity', 
+    options: ['James A. Garfield', 'Bill Clinton', 'William Howard Taft', 'George Washington',], 
+    answer: 'George Washington',
+    image: './assets/FortNecessity.jpg',
+    alt: 'fort'},
 
     {Question: 'The Eiffel Tower is built in', 
     options: ['1890', '1889', '1786', '1800',], 
-    answer: '1889'},
+    answer: '1889',
+    image: './assets/tower.jpg',
+    alt: 'tower'},
+
+    {Question: 'Sliced bread was invented in', 
+    options: ['America in 1928', 'France in 1789', 'Australia in 1897', 'Scotland in 1902',], 
+    answer: 'America in 1928',
+    image: './assets/bread.jpg',
+    alt: 'bread'},
+
+    {Question: 'Suez canal opened in the year', 
+    options: ['1863AD', '1869AD', '1875AD', '1983AD',], 
+    answer: '1869AD',
+    image: './assets/Suez canal.jpg',
+    alt: 'Suez canal'},
 
     {Question: 'New Zeland becomes first country to grant woman to right to vote in the year', 
     options: ['1799', '1869', '1845', '1865',], 
@@ -19,10 +35,6 @@ STORE = [
     options: ['James Madison', 'Gerald Ford', 'Abraham Lincoln', 'Benjamin Harrison',], 
     answer: 'James Madison'},
 
-    {Question: 'Name the person who built Fort Necessity', 
-    options: ['James A. Garfield', 'Bill Clinton', 'William Howard Taft', 'George Washington',], 
-    answer: 'George Washington'},
-
     {Question: 'Which country did Germany invade on the 1st of September 1939', 
     options: ['France', 'Czechoslovakia', 'Poland', 'Finland',], 
     answer: 'Poland'},
@@ -35,9 +47,7 @@ STORE = [
     options: ['Great Wall of China', 'Macchu Picchu', 'Lighthouse of Alexandria', 'Taj Mahal',], 
     answer: 'Lighthouse of Alexandria'},
 
-    {Question: 'Sliced bread was invented in', 
-    options: ['America in 1928', 'France in 1789', 'Australia in 1897', 'Scotland in 1902',], 
-    answer: 'America in 1928'},
+    
     
 ];
 
@@ -77,11 +87,14 @@ function renderQuestion(){
       let question = STORE[currentQuestionIndex];
       $('.form-question').html(`<p>${question.Question}</p>`);
       options();
+      $('.q-image').attr('src',`${question.image}`);
     } else {
         $('.stage-form').removeClass('active');
+        $('.score-remove').addClass('block');
         renderScore();
     }
 } 
+
 
 function resetQuizz(){
     $('.reset').on('click', '.redo', function(event) {
@@ -101,7 +114,7 @@ function renderScore(){
         $('.stage-final').addClass('active');
         $('.score').append(`${score-1}`);
     } else if( score >= 2){ 
-        $('.count-quizz').removeClass('active')
+        
         $('.three-right').addClass('active');
         $('.stage-final').addClass('active');
         $('.score').append(`${score-1}`);
@@ -129,6 +142,7 @@ function nextQuestion(){
             $('.stage-form').addClass('active');
             moveTONextQuestion();
             renderQuestion();
+            renderBackground();
         });
 }
 
