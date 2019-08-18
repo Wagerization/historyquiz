@@ -174,3 +174,6 @@ $(function () {
     renderScore();
     resetQuizz();
 });
+
+
+
