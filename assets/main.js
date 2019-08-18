@@ -1,27 +1,19 @@
 STORE = [
     {Question: 'Name the person who built Fort Necessity', 
     options: ['James A. Garfield', 'Bill Clinton', 'William Howard Taft', 'George Washington',], 
-    answer: 'George Washington',
-    image: './assets/FortNecessity.jpg',
-    alt: 'fort'},
+    answer: 'George Washington',},
 
     {Question: 'The Eiffel Tower is built in', 
     options: ['1890', '1889', '1786', '1800',], 
-    answer: '1889',
-    image: './assets/tower.jpg',
-    alt: 'tower'},
+    answer: '1889',},
 
     {Question: 'Sliced bread was invented in', 
     options: ['America in 1928', 'France in 1789', 'Australia in 1897', 'Scotland in 1902',], 
-    answer: 'America in 1928',
-    image: './assets/bread.jpg',
-    alt: 'bread'},
+    answer: 'America in 1928',},
 
     {Question: 'Suez canal opened in the year', 
     options: ['1863AD', '1869AD', '1875AD', '1983AD',], 
-    answer: '1869AD',
-    image: './assets/Suez canal.jpg',
-    alt: 'Suez canal'},
+    answer: '1869AD',},
 
     {Question: 'New Zeland becomes first country to grant woman to right to vote in the year', 
     options: ['1799', '1869', '1845', '1865',], 
@@ -87,7 +79,6 @@ function renderQuestion(){
       let question = STORE[currentQuestionIndex];
       $('.form-question').html(`<p>${question.Question}</p>`);
       options();
-      $('.q-image').attr('src',`${question.image}`);
     } else {
         $('.stage-form').removeClass('active');
         $('.score-remove').addClass('block');
